@@ -53,6 +53,7 @@ margin-right: auto;
 td 
 {
 border: 1px solid black;
+font-size:1.6em;
 }
 td#gris{
 background-color: silver;
