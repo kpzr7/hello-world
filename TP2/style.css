@@ -28,7 +28,7 @@ background-color : red;
 }
 
 
-img#logo{
+div#logo{
 
 background-image: url("/img/logo-iut.jpg");
 width:300px;
