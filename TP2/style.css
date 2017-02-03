@@ -1,3 +1,10 @@
+html, body { 
+/* Plus de scrollbar horizontale */ 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 #P1{
 background-color : blue;
 }
@@ -10,22 +17,23 @@ background-color : white;
 background-color : red;
 }
 
-/* Plus de scrollbar horizontale */ 
-html, body { 
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
-@media not (orientation: landscape) and (min-width: 480px) {
-    /* Le code pour les mobiles ici */
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+ only screen and (-o-min-device-pixel-ratio: 2),
+ only screen and (min--moz-device-pixel-ratio: 2),
+ only screen and (min-device-pixel-ratio: 2) {
 
 
 }
+
 
 img#logo{
+
+background-image: url("/img/logo-iut.jpg");
 width:300px;
 display: block;
 margin-left: auto;
 margin-right: auto;
 }
+
