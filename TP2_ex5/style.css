@@ -3,7 +3,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     color: white;
-    font-family: Oswald;
+    font-family: Impact, Arial;
 }
 html{font-size: 10px;}
 
@@ -31,7 +31,9 @@ div#menu{
 	margin-top:-80px;
 	margin-left: 80%;
 }
-
+.rechercher{
+	margin-top: 5px;
+}
 .rechercher .bouton{
 background-image: url(img/loupe.png);
 background-size:100%;
@@ -57,16 +59,16 @@ font-size: 1.6em;
 }
 
 a{
-color:yellow;
+color:#f1c400;
 }
 h1{
-color: #FFE51B;
+color: #f1c400;
 font-size:3em;
 margin-left:2%;
 }
 
 h2{
-color: #FFE51B;
+color: black;
 font-size:2em;
 margin-left:2%;
 margin-top: 4%;
@@ -78,6 +80,7 @@ width:100%;
 }
 
 section#mapform{
+	background-color: #f1c400;
 	float:left;
 	width:100%;
 }
@@ -105,7 +108,40 @@ padding-top: 30px;
 
 div#map{
 	float:left;
+	width:50%;
 }
+iframe#stade{
+	width:90%;
+	margin-left: 2%;
+}
+
+div#form{
+	float:left;
+	width:50%;
+	display:block;
+}
+
+div#form p {
+	margin-left:10%;
+}
+
+div#form input,textarea {
+	background-color: black;
+	color:#f1c400;
+	border: 1px black solid;;
+}
+
+footer{
+width:100%;
+float:left;
+text-align:center;
+background-color: black;
+}
+
+footer p{
+	color:#f1c400;
+}
+
 /*
 #P1{
 background-color : blue;
@@ -121,18 +157,11 @@ background-color : red;
 */
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
- only screen and (-o-min-device-pixel-ratio: 2),
- only screen and (min--moz-device-pixel-ratio: 2),
- only screen and (min-device-pixel-ratio: 2) {
-
-}
-
-
-
 
 
 
 @media screen and (max-width: 640px) {
+
+
   
 }
