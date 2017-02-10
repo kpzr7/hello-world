@@ -1,0 +1,116 @@
+html, body { 
+/* Plus de scrollbar horizontale */ 
+    max-width: 100%;
+    overflow-x: hidden;
+    color: white;
+}
+html{font-size: 10px;}
+
+body{
+background-image: url('img/bg.jpg');
+background-size: cover; 
+/*background-size: 100%; */
+background-repeat: no-repeat; 
+
+}
+
+
+div#logo{
+background-image: url('img/logo.png');
+width:100px;
+height: 100px;
+background-size: auto 100%;
+display: block;
+margin-left: 0%;
+}
+
+
+div#menu{
+	display:block;
+	margin-top:-80px;
+	margin-left: 80%;
+}
+
+.rechercher .bouton{
+background-image: url(img/loupe.png);
+background-size:100%;
+background-repeat: no-repeat;
+width: 30px;
+height: 30px;
+padding: 0; }
+
+div#banner{
+padding:0 0 0 0;
+margin-top:30px;
+background-image: url(img/banner.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 200px;
+
+}
+
+
+p{
+font-size: 1.6em;
+}
+
+a{
+color:yellow;
+}
+h1{
+color: #FFE51B;
+font-size:3em;
+margin-left:2%;
+}
+
+
+
+div#joueur h2{
+	color: #FFE51B;
+	font-size :12px;
+	
+}
+div#joueur span{
+	color: #FFE572;
+	font-size :10px;
+	text-align:center;
+
+}
+div#joueur{
+	margin-top: 3%;
+	text-align:center;
+	width:25%;
+	
+	float: left;
+}
+/*
+#P1{
+background-color : blue;
+}
+
+#P2{
+background-color : white;
+}
+
+#P3{
+background-color : red;
+}
+*/
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+ only screen and (-o-min-device-pixel-ratio: 2),
+ only screen and (min--moz-device-pixel-ratio: 2),
+ only screen and (min-device-pixel-ratio: 2) {
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  
+}
