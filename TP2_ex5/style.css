@@ -3,7 +3,10 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     color: white;
-    font-family: Impact, Arial;
+    font-family: Arial;
+    overflow-x: hidden;
+    margin: 0;
+    padding:0;
 }
 html{font-size: 10px;}
 
@@ -14,8 +17,14 @@ background-size: cover;
 background-repeat: no-repeat; 
 
 }
-
-
+ul{
+		visibility: hidden;
+	height: 0px;
+}
+nav#burger{
+	visibility: hidden;
+	height: 0px;
+}
 div#logo{
 background-image: url('img/logo.png');
 width:100px;
@@ -25,11 +34,25 @@ display: block;
 margin-left: 0%;
 }
 
-
+div#call a img{
+	visibility: :hidden;
+	height:0px;
+}
+div#burger{
+	height:0px;
+	visibility: :hidden;
+}
 div#menu{
 	display:block;
 	margin-top:-80px;
 	margin-left: 80%;
+}
+
+div#menu input.champ{
+	width:80%;
+	height:25px;
+	border:0px;
+	float:left;
 }
 .rechercher{
 	margin-top: 5px;
@@ -38,9 +61,11 @@ div#menu{
 background-image: url(img/loupe.png);
 background-size:100%;
 background-repeat: no-repeat;
-width: 30px;
-height: 30px;
-padding: 0; }
+width: 25px;
+height: 25px;
+padding: 0;
+float:right; 
+border: 0px;}
 
 div#banner{
 padding:20 0 0 0;
@@ -49,7 +74,7 @@ background-image: url(img/banner.jpg);
 background-size:cover;
 background-repeat: no-repeat;
 width: 100%;
-height: 400px;
+height: 200px;
 
 }
 
@@ -60,6 +85,7 @@ font-size: 1.6em;
 
 a{
 color:#f1c400;
+font-size: 1.3em;
 }
 h1{
 color: #f1c400;
@@ -72,6 +98,10 @@ color: black;
 font-size:2em;
 margin-left:2%;
 margin-top: 4%;
+}
+
+section#P1 p{
+	text-align: justify;
 }
 
 section#content{
@@ -129,6 +159,7 @@ div#form input,textarea {
 	background-color: black;
 	color:#f1c400;
 	border: 1px black solid;;
+	width:80%;
 }
 
 footer{
@@ -160,8 +191,142 @@ background-color : red;
 
 
 
-@media screen and (max-width: 640px) {
-
-
-  
+@media screen and (max-width: 900px) {
+div#logo{
+    margin-left: auto;
+    margin-right: auto;
+    height:150px;
+    width:150px;
 }
+div#menu{
+    margin-top: auto;
+    float: left;
+    margin-left: 40%;
+    margin-right: auto;
+    display: block;
+}
+
+nav#burger{
+	visibility: visible;
+}
+
+.rechercher .bouton {
+    float: none;
+}
+div#menu input.champ {
+   width:80%;
+}
+div#call a img {
+	visibility: :hidden;
+	height:0px;
+}
+
+
+.joueur{
+	width:50%;
+}
+
+@media screen and (max-width: 450px) {
+.joueur{
+	width:100%;
+}
+div#menu{
+	visibility: hidden;
+	height:0px;
+}
+
+div#banner{
+
+margin-top:5%;
+background-size:100%;
+height: 200px;
+}
+
+div#call a img{
+visibility:visible;
+width:90px;
+height: 90px;
+position:absolute;
+margin-left: 70%;
+}
+nav {
+
+	float: left;
+		
+
+}
+nav a {
+	font-weight: bold;
+	font-size: 1.5em;
+
+	color:black;
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background-image: url('img/menu-icon.png');
+	background-size:100%;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+
+
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	float: left;
+	padding-top: 10px
+	border : 1px  black solid;
+
+}
+#menu-icon {
+
+		display:inline-block;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;	
+		border: 2px solid black;
+		width: 70%;
+		background-color: #f1c400;
+
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 80%;
+		padding-top:20px;
+		padding-bottom:20px;
+		border-bottom: 1px solid black;
+		border-width: 100%
+		margin: 0;
+
+	}
+
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+}
+
