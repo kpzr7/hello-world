@@ -6,9 +6,6 @@ $( document ).ready(function($){
         $('#burger').toggle();
     });
 
-    /* Je veux pouvoir masquer le menu si on clique sur le cache */
-    $('#site-cache').click(function(e){
-    $('body').removeClass('with--sidebar');
-    })
+  
 });
 

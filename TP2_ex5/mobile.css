@@ -1,0 +1,61 @@
+@media screen and (max-width: 450px) {
+.joueur{
+	width:100%;
+}
+div#menu{
+	visibility: hidden;
+	height:0px;
+}
+
+div#banner{
+margin-top:5%;
+background-size:100%;
+height: 200px;
+}
+
+div#call img a{
+visibility:visible;
+width:90px;
+height: 90px;
+position:absolute;
+margin-left: 70%;
+}
+
+#menu-icon {
+	width: 40px;
+	height: 40px;
+	background-image: url('img/menu-icon.png');
+	background-size:100%;
+
+}
+
+div#burger {
+
+	float: left;
+		
+
+}
+div#burger a {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+
+
+
+ul {
+
+	list-style: none;
+	width: 100%;
+}
+
+li {
+
+	display: inline-block;
+	float: left;
+	padding-top: 10px
+	border : 1px  black solid;
+	width: 100%;
+	}
+}

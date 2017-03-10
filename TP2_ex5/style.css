@@ -21,7 +21,7 @@ ul{
 	visibility: hidden;
 	height: 0px;
 }
-nav#burger{
+div#burger{
 	visibility: hidden;
 	height: 0px;
 }
@@ -207,10 +207,8 @@ div#menu{
     width: 33%;
 }
 
-nav#burger{
-	visibility: visible;
 
-}
+
 
 .rechercher .bouton {
     float: left;
@@ -227,8 +225,8 @@ div#call a img {
 .joueur{
 	width:50%;
 }
-
 @media screen and (max-width: 450px) {
+
 .joueur{
 	width:100%;
 }
@@ -238,35 +236,32 @@ div#menu{
 }
 
 div#banner{
-
 margin-top:5%;
 background-size:100%;
 height: 200px;
 }
 
-div#call a img{
+div#call a{
 visibility:visible;
 width:90px;
 height: 90px;
 position:absolute;
+background-image: url('img/call.png');
+background-size:100%;
 margin-left: 70%;
 }
-nav {
 
+
+
+div#burger {
+	display: none;
+	height:33%;
 	float: left;
-		
-
-}
-nav a {
-	font-weight: bold;
-	font-size: 1.5em;
-
-	color:black;
+	width:100%;
 }
 
-#menu-icon {
-
-
+div#menu-icon{
+	visibility: visible;
 	width: 40px;
 	height: 40px;
 	background-image: url('img/menu-icon.png');
@@ -274,10 +269,25 @@ nav a {
 
 }
 
+div#burger a {
+	font-weight: bold;
+	font-size: 1.5em;
+	visibility: visible;
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	border : 1px  black solid;
+	background-size:100%;
+	
+}
 
 
-ul {
 
+
+
+ul li{
+	color:black;
+	border : 1px  black solid;
 	list-style: none;
 	width: 100%;
 }
@@ -289,40 +299,6 @@ li {
 	padding-top: 10px
 	border : 1px  black solid;
 	width: 100%;
-
-}
-#menu-icon {
-	display:inline-block;
-	}
-
-	nav ul, nav:active ul { 
-
-		display: block;
-		position: absolute;	
-		border: 2px solid black;
-		width: 70%;
-		background-color: #f1c400;
-
-
-	}
-
-	nav li {
-
-		text-align: center;
-		width: 80%;
-		padding-top:20px;
-		padding-bottom:20px;
-		border-bottom: 1px solid black;
-		border-width: 100%
-		margin: 0;
-
-	}
-
-
-	nav:hover ul {
-
-		display: block;
-
 	}
 }
 
